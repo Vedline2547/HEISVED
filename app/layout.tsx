@@ -45,10 +45,6 @@ export const metadata: Metadata = {
 
   applicationName: "HEISVED",
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     title: "HEISVED | Engineering Intelligence. Building Tomorrow.",
     description:
@@ -59,9 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/heisved-logo.png",
-        width: 800,
-        height: 300,
+        url: "/og-image.png",
         alt: "HEISVED - Engineering Intelligence. Building Tomorrow.",
       },
     ],
@@ -72,7 +66,7 @@ export const metadata: Metadata = {
     title: "HEISVED | Engineering Intelligence",
     description:
       "AI, software development, and engineering innovation. Founded in Kenya. Building for Africa and the world.",
-    images: ["/heisved-logo.png"],
+    images: ["/og-image.png"],
   },
 
   robots: {
