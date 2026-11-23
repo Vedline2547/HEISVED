@@ -2,9 +2,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact HEISVED | Let's Work Together",
+  title: "Contact HEISVED | AI & Software Development in Kenya",
   description:
-    "Contact HEISVED for AI development, software solutions, engineering services, BIM innovation, partnerships, and business enquiries.",
+    "Get in touch with HEISVED for AI and machine learning development, custom software, RAG systems, computer vision, structural engineering, BIM services and business partnerships.",
 };
 
 export default function ContactPage() {

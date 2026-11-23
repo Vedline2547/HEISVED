@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Engineering Services | HEISVED",
+  title: "Structural Engineering, BIM & Digital Construction in Kenya",
   description:
-    "HEISVED provides structural engineering, BIM and digital construction solutions, and explores the integration of artificial intelligence into engineering workflows.",
+    "Discover HEISVED's structural engineering, Building Information Modelling (BIM), digital construction and BIM + AI capabilities. Exploring intelligent engineering solutions from Kenya for Africa and beyond.",
 };
 
 const services = [

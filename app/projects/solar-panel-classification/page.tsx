@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Solar Panel Defect Classification",
+  title: "Solar Panel Defect Classification Using Deep Learning | HEISVED",
   description:
-    "Explore HEISVED's computer vision project using deep learning to classify solar panel conditions and defects.",
+    "Explore HEISVED's computer vision project using Python, TensorFlow, Keras and EfficientNet to classify solar panel conditions, including dust, bird droppings and electrical and physical damage.",
 };
 
 const technologies = [

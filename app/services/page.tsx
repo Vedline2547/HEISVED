@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI, Software & Machine Learning Services | HEISVED",
+  title: "AI, Machine Learning & Software Development Services in Kenya",
   description:
-    "HEISVED develops machine learning solutions, AI applications, RAG systems, computer vision solutions and custom software for real-world challenges.",
+    "Explore HEISVED's AI development, machine learning, computer vision, RAG systems and custom software development services. Building intelligent technology solutions from Kenya for Africa and beyond.",
 };
 
 const services = [

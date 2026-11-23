@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Resume Genie | AI Career Assistant",
+  title: "Resume Genie | AI Resume Analyzer & Career Assistant | HEISVED",
   description:
-    "Explore Resume Genie, an AI-powered career assistant built with Python, LangChain, Ollama and Qwen2.5.",
+    "Discover Resume Genie, an AI-powered career assistant built with Python, LangChain, Ollama and Qwen2.5 3B. Explore AI resume analysis, ATS job matching, career coaching, cover letter generation and skills gap analysis.",
 };
 
 const technologies = [

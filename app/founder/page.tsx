@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Founder | HEISVED",
+  title: "Founder & Technology Lead | HEISVED",
   description:
-    "Meet Vedline Ochieng Odhiambo, founder of HEISVED, building at the intersection of artificial intelligence, software, and engineering technology.",
+    "Meet Vedline Ochieng Odhiambo, founder and Technology Lead of HEISVED, a Kenyan technology company exploring artificial intelligence, software development, and engineering innovation.",
 };
 
 export default function FounderPage() {
@@ -63,3 +63,4 @@ export default function FounderPage() {
     </main>
   );
 }
+

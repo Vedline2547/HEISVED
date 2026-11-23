@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Breast Cancer Prediction System",
+  title: "Breast Cancer Prediction Using Machine Learning | HEISVED",
   description:
-    "Explore HEISVED's breast cancer prediction project, built using Python and a Random Forest machine learning classifier.",
+    "Explore HEISVED's breast cancer prediction application built with Python, Scikit-learn and a Random Forest classifier. Discover the machine learning approach and interactive demo.",
 };
 
 const inputs = [

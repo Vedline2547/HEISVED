@@ -2,9 +2,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Innovation Lab | HEISVED",
+  title: "AI Innovation, Research & Development | HEISVED",
   description:
-    "Explore HEISVED's research and development in artificial intelligence, intelligent software, automation, and BIM + AI innovation.",
+    "Explore HEISVED's AI research and innovation in BIM + AI, large language models, RAG systems, intelligent automation, machine learning and computer vision. Building intelligent technology solutions from Kenya.",
 };
 
 const innovations = [

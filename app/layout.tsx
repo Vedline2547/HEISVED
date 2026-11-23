@@ -18,37 +18,31 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://heisved.onrender.com"),
 
   title: {
-    default: "HEISVED | Engineering Intelligence. Building Tomorrow.",
+    default: "HEISVED | AI, Software & Engineering Solutions in Kenya",
     template: "%s | HEISVED",
   },
 
   description:
-    "HEISVED is a Kenyan-founded technology company delivering artificial intelligence, machine learning, custom software development, and professional engineering services across Africa and beyond.",
+    "HEISVED is a Kenyan technology company developing AI and machine learning solutions, custom software, structural engineering services, and BIM innovation for Africa and beyond.",
 
   keywords: [
     "HEISVED",
-    "Artificial Intelligence",
-    "Machine Learning",
+    "Artificial Intelligence Kenya",
+    "Machine Learning Kenya",
     "AI Development",
-    "Software Development",
     "Custom Software Development",
     "Structural Engineering",
     "BIM",
-    "Building Information Modelling",
-    "Computer Vision",
-    "Large Language Models",
+    "BIM and AI",
     "RAG Systems",
-    "Engineering Innovation",
-    "Technology Company in Kenya",
-    "AI Company in Africa",
+    "Computer Vision",
+    "Technology Company Africa",
   ],
-
-  applicationName: "HEISVED",
 
   openGraph: {
     title: "HEISVED | Engineering Intelligence. Building Tomorrow.",
     description:
-      "A Kenyan-founded technology company delivering AI, software development, and engineering solutions. Founded in Kenya. Building for Africa and the world.",
+      "A Kenyan-founded technology company developing AI, machine learning, custom software, and professional engineering solutions for Africa and beyond.",
     url: "https://heisved.onrender.com",
     siteName: "HEISVED",
     locale: "en_KE",
@@ -56,7 +50,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        alt: "HEISVED - Engineering Intelligence. Building Tomorrow.",
+        width: 1200,
+        height: 630,
+        alt: "HEISVED – Engineering Intelligence. Building Tomorrow.",
       },
     ],
   },
@@ -65,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HEISVED | Engineering Intelligence",
     description:
-      "AI, software development, and engineering innovation. Founded in Kenya. Building for Africa and the world.",
+      "AI, machine learning, software development, and engineering innovation from Kenya to the world.",
     images: ["/og-image.png"],
   },
 
@@ -75,21 +71,68 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "HEISVED",
+  url: "https://heisved.onrender.com",
+  logo: "https://heisved.onrender.com/heisved-logo.png",
+  description:
+    "A Kenyan-founded technology company developing artificial intelligence, machine learning, custom software, structural engineering, and BIM innovation.",
+  slogan: "Engineering Intelligence. Building Tomorrow.",
+  foundingLocation: {
+    "@type": "Country",
+    name: "Kenya",
+  },
+  areaServed: [
+    {
+      "@type": "Continent",
+      name: "Africa",
+    },
+    {
+      "@type": "Place",
+      name: "Worldwide",
+    },
+  ],
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Computer Vision",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "Custom Software Development",
+    "Structural Engineering",
+    "Building Information Modelling",
+    "BIM and AI",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Business enquiries",
+    email: "ochiengved@gmail.com",
+    telephone: "+254795207879",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="flex min-h-full flex-col">
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+          }}
+        />
+
         <Navbar />
         {children}
       </body>
     </html>
   );
 }
-

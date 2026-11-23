@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Elephant Species Classification",
+  title: "Elephant Species Classification Using Deep Learning | HEISVED",
   description:
-    "Explore HEISVED's computer vision project for classifying African and Asian elephants using deep learning.",
+    "Explore HEISVED's computer vision project using Python, TensorFlow, CNNs and MobileNetV2 to classify African and Asian elephants. Try the deployed AI application.",
 };
 
 const technologies = [
