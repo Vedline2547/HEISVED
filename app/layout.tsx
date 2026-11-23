@@ -18,42 +18,61 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://heisved.com"),
 
   title: {
-    default: "HEISVED | Engineering Intelligence",
+    default: "HEISVED | Engineering Intelligence. Building Tomorrow.",
     template: "%s | HEISVED",
   },
 
   description:
-    "HEISVED is a Kenyan-founded technology company developing artificial intelligence, machine learning, and engineering solutions for Africa and beyond.",
+    "HEISVED is a Kenyan-founded technology company delivering artificial intelligence, machine learning, custom software development, and professional engineering services across Africa and beyond.",
 
   keywords: [
     "HEISVED",
     "Artificial Intelligence",
     "Machine Learning",
-    "Civil Engineering",
+    "AI Development",
+    "Software Development",
+    "Custom Software Development",
     "Structural Engineering",
     "BIM",
+    "Building Information Modelling",
     "Computer Vision",
-    "LLMs",
+    "Large Language Models",
     "RAG Systems",
     "Engineering Innovation",
-    "Kenya Technology Company",
+    "Technology Company in Kenya",
+    "AI Company in Africa",
   ],
 
   applicationName: "HEISVED",
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "HEISVED | Engineering Intelligence",
+    title: "HEISVED | Engineering Intelligence. Building Tomorrow.",
     description:
-      "Engineering Intelligence. Building Tomorrow. Exploring AI, machine learning, and engineering innovation.",
+      "A Kenyan-founded technology company delivering AI, software development, and engineering solutions. Founded in Kenya. Building for Africa and the world.",
+    url: "https://heisved.com",
     siteName: "HEISVED",
     locale: "en_KE",
     type: "website",
+    images: [
+      {
+        url: "/heisved-logo.png",
+        width: 800,
+        height: 300,
+        alt: "HEISVED - Engineering Intelligence. Building Tomorrow.",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
     title: "HEISVED | Engineering Intelligence",
-    description: "Engineering Intelligence. Building Tomorrow.",
+    description:
+      "AI, software development, and engineering innovation. Founded in Kenya. Building for Africa and the world.",
+    images: ["/heisved-logo.png"],
   },
 
   robots: {
@@ -62,7 +81,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"

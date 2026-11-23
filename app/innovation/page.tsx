@@ -1,9 +1,10 @@
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Innovation Lab",
+  title: "Innovation Lab | HEISVED",
   description:
-    "Discover HEISVED's research and development initiatives exploring AI, engineering innovation, and emerging technologies.",
+    "Explore HEISVED's research and development in artificial intelligence, intelligent software, automation, and BIM + AI innovation.",
 };
 
 const innovations = [
@@ -11,22 +12,29 @@ const innovations = [
     number: "01",
     title: "AI-Powered BIM",
     description:
-      "Exploring how large language models and AI can interact with Building Information Modelling environments.",
-    technologies: ["AI", "LLMs", "Autodesk Revit"],
+      "Exploring the integration of artificial intelligence and large language models with Building Information Modelling to improve access to project information and support smarter digital construction workflows.",
+    technologies: ["AI", "LLMs", "Autodesk Revit", "BIM"],
   },
   {
     number: "02",
     title: "Intelligent Engineering Assistants",
     description:
-      "Researching AI assistants capable of retrieving technical engineering information and supporting engineering workflows.",
-    technologies: ["RAG", "LLMs", "Engineering Data"],
+      "Investigating AI-powered assistants that use retrieval-augmented generation to access technical documentation, interpret engineering information, and support knowledge-intensive workflows.",
+    technologies: ["RAG", "LLMs", "Python", "Engineering Data"],
   },
   {
     number: "03",
-    title: "Engineering Automation",
+    title: "Intelligent Automation",
     description:
-      "Investigating opportunities to automate repetitive engineering and digital construction workflows.",
-    technologies: ["Python", "Automation", "BIM"],
+      "Researching how AI and software automation can reduce repetitive tasks, streamline digital workflows, and improve the efficiency of technical processes.",
+    technologies: ["Python", "AI Agents", "Automation"],
+  },
+  {
+    number: "04",
+    title: "Applied AI Research",
+    description:
+      "Exploring practical applications of machine learning and computer vision to develop intelligent systems that address real-world challenges across different industries.",
+    technologies: ["Machine Learning", "Deep Learning", "Computer Vision"],
   },
 ];
 
@@ -47,17 +55,19 @@ export default function InnovationPage() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400 sm:mt-7 sm:text-lg sm:leading-8">
-            The HEISVED Innovation Lab explores emerging
-            technologies at the intersection of artificial
-            intelligence, civil engineering and digital
-            construction.
+            At HEISVED, we explore the possibilities of
+            artificial intelligence, intelligent software,
+            engineering technology, and digital innovation.
+            Our Innovation Lab focuses on research and
+            experimentation aimed at turning emerging
+            technologies into practical solutions.
           </p>
 
           <div className="mt-8 inline-flex rounded-full border border-blue-800 px-4 py-3 text-xs text-blue-400 sm:mt-10 sm:px-5 sm:text-sm">
-            Innovation in Development
+            Exploring What Comes Next
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:mt-20 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:mt-20 lg:grid-cols-2">
             {innovations.map((item) => (
               <article
                 key={item.number}
@@ -87,7 +97,7 @@ export default function InnovationPage() {
                 </div>
 
                 <p className="mt-7 text-xs font-semibold uppercase tracking-widest text-blue-400 sm:mt-8">
-                  Coming Soon
+                  Research & Development
                 </p>
               </article>
             ))}
@@ -103,10 +113,10 @@ export default function InnovationPage() {
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm leading-7 text-gray-400 sm:mt-5 sm:text-base sm:leading-8">
-              We believe artificial intelligence can help
-              transform how engineering information is accessed,
-              how designs are developed and how infrastructure
-              projects are delivered.
+              We envision a future where artificial intelligence
+              and engineering work together to solve complex
+              problems, improve decision-making, and create
+              smarter ways to design, build, and operate.
             </p>
           </div>
         </div>

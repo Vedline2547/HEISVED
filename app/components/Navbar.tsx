@@ -4,10 +4,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "AI Services", href: "/services" },
+  { name: "Services", href: "/services" },
   { name: "Engineering", href: "/engineering" },
   { name: "Innovation Lab", href: "/innovation" },
   { name: "About", href: "/about" },
@@ -17,6 +18,12 @@ const links = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-800 bg-[#080D18]/95 backdrop-blur-md">
@@ -45,7 +52,12 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-slate-300 transition duration-300 hover:text-blue-400"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`text-sm transition duration-300 ${
+                isActive(link.href)
+                  ? "font-semibold text-blue-400"
+                  : "text-slate-300 hover:text-blue-400"
+              }`}
             >
               {link.name}
             </Link>
@@ -107,7 +119,12 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-sm text-slate-300 transition duration-300 hover:translate-x-1 hover:text-blue-400"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={`text-sm transition duration-300 hover:translate-x-1 hover:text-blue-400 ${
+                  isActive(link.href)
+                    ? "font-semibold text-blue-400"
+                    : "text-slate-300"
+                }`}
               >
                 {link.name}
               </Link>

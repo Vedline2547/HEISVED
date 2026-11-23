@@ -3,53 +3,53 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI & Machine Learning Services",
+  title: "AI, Software & Machine Learning Services | HEISVED",
   description:
-    "Explore HEISVED's machine learning, AI development, LLM, RAG and computer vision services for real-world challenges.",
+    "HEISVED develops machine learning solutions, AI applications, RAG systems, computer vision solutions and custom software for real-world challenges.",
 };
 
 const services = [
   {
     number: "01",
-    title: "Machine Learning",
+    title: "Machine Learning & Predictive Analytics",
     description:
-      "Developing predictive models and intelligent systems that transform data into actionable insights.",
+      "We develop data-driven machine learning solutions that help organizations identify patterns, make informed decisions and extract meaningful insights from their data.",
     capabilities: [
       "Predictive modelling",
       "Classification and regression",
       "Model evaluation and optimization",
-      "Data analysis",
+      "Data analysis and feature engineering",
     ],
   },
   {
     number: "02",
-    title: "Artificial Intelligence",
+    title: "Artificial Intelligence Development",
     description:
-      "Building AI-powered applications that automate processes and solve practical problems.",
+      "We build AI-powered applications and intelligent systems designed to automate processes, improve workflows and address practical business challenges.",
     capabilities: [
       "AI application development",
       "Intelligent automation",
-      "AI-powered workflows",
-      "Custom AI solutions",
+      "AI agents and workflows",
+      "Custom AI integrations",
     ],
   },
   {
     number: "03",
     title: "LLMs & RAG Systems",
     description:
-      "Creating intelligent knowledge assistants that retrieve information from documents and specialized knowledge bases.",
+      "We develop intelligent knowledge systems that use large language models and retrieval-augmented generation to make organizational information more accessible and useful.",
     capabilities: [
       "Retrieval-Augmented Generation",
       "Document intelligence",
-      "AI chatbots",
-      "Knowledge assistants",
+      "AI chatbots and assistants",
+      "Knowledge management systems",
     ],
   },
   {
     number: "04",
     title: "Computer Vision",
     description:
-      "Developing systems that interpret and analyze visual information using machine learning.",
+      "We develop computer vision applications that interpret visual information, recognize patterns and classify images using deep learning.",
     capabilities: [
       "Image classification",
       "Object detection",
@@ -57,102 +57,215 @@ const services = [
       "Image-based analysis",
     ],
   },
+  {
+    number: "05",
+    title: "Custom Software Development",
+    description:
+      "We design and develop software applications tailored to specific business requirements, from web platforms and management systems to intelligent digital products.",
+    capabilities: [
+      "Web application development",
+      "Business management systems",
+      "API development and integration",
+      "AI-powered software applications",
+    ],
+  },
 ];
 
-const projectFeatures = [
-  "Radius Mean",
-  "Texture Mean",
-  "Perimeter Mean",
-  "Smoothness Mean",
-  "Compactness Mean",
-];
-
-const breastTechnologies = [
-  "Python",
-  "Scikit-learn",
-  "Random Forest",
-  "Machine Learning",
-];
-
-const elephantTechnologies = [
-  "Python",
-  "TensorFlow",
-  "Keras",
-  "MobileNetV2",
-  "CNN",
-  "Streamlit",
-];
-
-const solarTechnologies = [
-  "Python",
-  "TensorFlow",
-  "Keras",
-  "EfficientNet",
-  "CNN",
-  "Streamlit",
-];
-
-const solarCategories = [
-  "Bird-drop",
-  "Clean",
-  "Dusty",
-  "Electrical-Damage",
-  "Physical-damage",
-  "Snow-Covered",
-];
-
-const resumeGenieTechnologies = [
-  "Python",
-  "Streamlit",
-  "LangChain",
-  "Ollama",
-  "Qwen2.5 3B",
-  "LLMs",
-  "Prompt Engineering",
+const projects = [
+  {
+    number: "01",
+    slug: "breast-cancer-prediction",
+    category: "MACHINE LEARNING",
+    title: "Breast Cancer Prediction System",
+    description:
+      "A machine learning application using a Random Forest classifier to predict breast cancer outcomes from diagnostic measurements. The project demonstrates predictive modelling, feature processing and the deployment of a machine learning model through a web application.",
+    visual: "ML.",
+    visualDescription: "Predictive modelling for healthcare insights",
+    gradient: "from-blue-950 via-[#101D35] to-[#080D18]",
+    technologies: [
+      "Python",
+      "Scikit-learn",
+      "Random Forest",
+      "Machine Learning",
+    ],
+    features: [
+      "Radius Mean",
+      "Texture Mean",
+      "Perimeter Mean",
+      "Smoothness Mean",
+      "Compactness Mean",
+    ],
+    demo: "https://breast-cancer-prediction-v4pf.onrender.com",
+    github: "https://github.com/Vedline2547/Breast-Cancer-Prediction",
+    disclaimer:
+      "This project is for educational and predictive modelling purposes. It is not a substitute for professional medical diagnosis.",
+  },
+  {
+    number: "02",
+    slug: "elephant-classification",
+    category: "COMPUTER VISION",
+    title: "Elephant Species Classification",
+    description:
+      "A deep learning application that uses convolutional neural networks and transfer learning to distinguish between African and Asian elephants from images.",
+    visual: "🐘",
+    visualDescription: "African and Asian elephant recognition",
+    gradient: "from-cyan-950 via-[#101D35] to-[#080D18]",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "MobileNetV2",
+      "CNN",
+      "Streamlit",
+    ],
+    features: ["African Elephant", "Asian Elephant"],
+    demo: "https://elephant-classification.onrender.com",
+    github: "https://github.com/Vedline2547/Elephant-classification",
+  },
+  {
+    number: "03",
+    slug: "solar-panel-classification",
+    category: "COMPUTER VISION",
+    title: "Solar Panel Defect Classification",
+    description:
+      "A deep learning application using an EfficientNet model and transfer learning to classify solar panel images into six condition categories, including different types of damage and surface conditions.",
+    visual: "☀️",
+    visualDescription: "AI-powered solar panel image analysis",
+    gradient: "from-amber-950 via-[#17243A] to-[#080D18]",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "EfficientNet",
+      "CNN",
+      "Streamlit",
+    ],
+    features: [
+      "Bird-drop",
+      "Clean",
+      "Dusty",
+      "Electrical-Damage",
+      "Physical-damage",
+      "Snow-Covered",
+    ],
+    demo: "https://solar-panel-classifier-yc0d.onrender.com",
+    github:
+      "https://github.com/Vedline2547/Solar-panel-defect-classification",
+  },
+  {
+    number: "04",
+    slug: "resume-genie",
+    category: "AI & LLM SYSTEMS",
+    title: "Resume Genie – AI Career Assistant",
+    description:
+      "An AI-powered career assistance application that uses large language models to analyze resumes, assess job compatibility, provide personalized career guidance and generate tailored cover letters.",
+    visual: "RESUME.",
+    visualDescription: "Intelligent AI-powered career assistance",
+    gradient: "from-purple-950 via-[#17203A] to-[#080D18]",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "LangChain",
+      "Ollama",
+      "Qwen2.5 3B",
+      "LLMs",
+      "Prompt Engineering",
+    ],
+    features: [
+      "AI Resume Analysis",
+      "ATS Job Matching",
+      "Career Coaching",
+      "Cover Letter Generation",
+      "Skills Gap Analysis",
+    ],
+    demo: "http://15.188.26.4:8501/",
+    github: "https://github.com/Vedline2547/Resume-genie",
+  },
 ];
 
 export default function ServicesPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#080D18] text-white">
-      <section className="px-5 py-16 sm:px-8 sm:py-20 lg:px-20 lg:py-24">
+      {/* Hero */}
+      <section className="px-5 py-20 sm:px-8 sm:py-24 lg:px-20 lg:py-28">
         <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400 sm:text-sm sm:tracking-[0.3em]">
-            What We Offer
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400 sm:text-sm">
+            Our Services
           </p>
 
-          <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight sm:mt-6 sm:text-5xl md:text-6xl">
-            Intelligent Solutions.
+          <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            Technology That
             <span className="block text-blue-500">
-              Real-World Impact.
+              Solves Real Problems.
             </span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400 sm:mt-7 sm:text-lg sm:leading-8">
-            HEISVED develops machine learning models,
-            AI applications and intelligent systems
-            designed to address real-world challenges.
+          <p className="mt-7 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
+            HEISVED develops intelligent software, machine learning
+            solutions and digital systems that help businesses and
+            organizations address real-world challenges.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:mt-20">
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/contact"
+              className="rounded-lg bg-blue-600 px-7 py-3.5 text-sm font-semibold transition hover:bg-blue-500"
+            >
+              Discuss a Project
+            </Link>
+
+            <a
+              href="#services"
+              className="rounded-lg border border-gray-700 px-7 py-3.5 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
+            >
+              Explore Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section
+        id="services"
+        className="border-t border-gray-800/70 bg-[#0A1120] px-5 py-20 sm:px-8 sm:py-24 lg:px-20"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400">
+              What We Do
+            </p>
+
+            <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
+              Solutions Built Around Your Needs
+            </h2>
+
+            <p className="mt-5 leading-8 text-gray-400">
+              From intelligent applications to tailored software
+              platforms, we bring together technical expertise
+              and modern technologies to develop practical solutions.
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article
                 key={service.number}
-                className="rounded-2xl border border-gray-800 bg-[#0D1525] p-6 transition duration-300 hover:border-blue-500 sm:p-8"
+                className="rounded-2xl border border-gray-800 bg-[#0D1525] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-500 sm:p-8"
               >
                 <p className="text-sm font-semibold text-blue-400">
                   {service.number}
                 </p>
 
-                <h2 className="mt-4 text-xl font-bold sm:mt-5 sm:text-2xl">
+                <h3 className="mt-5 text-xl font-bold sm:text-2xl">
                   {service.title}
-                </h2>
+                </h3>
 
-                <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
+                <p className="mt-5 text-sm leading-7 text-gray-400">
                   {service.description}
                 </p>
 
-                <div className="mt-6 sm:mt-7">
-                  <p className="mb-4 text-sm font-semibold text-gray-200">
+                <div className="mt-7 border-t border-gray-800 pt-6">
+                  <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-gray-500">
                     Capabilities
                   </p>
 
@@ -162,7 +275,7 @@ export default function ServicesPage() {
                         key={item}
                         className="flex items-start gap-3 text-sm leading-6 text-gray-400"
                       >
-                        <span className="mt-0.5 text-blue-500">✦</span>
+                        <span className="text-blue-500">✦</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -171,472 +284,170 @@ export default function ServicesPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Featured Projects */}
-          <section className="mt-20 sm:mt-28">
-            <div className="mb-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400 sm:text-sm">
-                Our Work
-              </p>
+      {/* Featured Projects */}
+      <section className="px-5 py-20 sm:px-8 sm:py-24 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400">
+              Our Work
+            </p>
 
-              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-                Featured Projects
-              </h2>
+            <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
+              Featured Projects
+            </h2>
 
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-gray-400 sm:text-base">
-                Explore practical applications of machine learning
-                and artificial intelligence developed through
-                experimentation and engineering.
-              </p>
-            </div>
+            <p className="mt-5 leading-8 text-gray-400">
+              Explore selected applications that demonstrate
+              our work across machine learning, artificial
+              intelligence and computer vision.
+            </p>
+          </div>
 
-            {/* Project 01: Breast Cancer Prediction */}
-            <article className="overflow-hidden rounded-2xl border border-gray-800 bg-[#0D1525] transition duration-300 hover:border-blue-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="flex min-h-[280px] flex-col justify-center border-b border-gray-800 bg-gradient-to-br from-blue-950 via-[#101D35] to-[#080D18] p-8 sm:p-10 lg:border-b-0 lg:border-r">
-                  <div className="mb-6 flex items-center gap-3">
-                    <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-400">
-                      MACHINE LEARNING
-                    </span>
-                    <span className="text-xs text-gray-500">
-                      PROJECT 01
-                    </span>
-                  </div>
-
-                  <div className="text-5xl font-bold tracking-tight text-white sm:text-6xl">
-                    ML<span className="text-blue-500">.</span>
-                  </div>
-
-                  <p className="mt-4 text-sm text-gray-400">
-                    Predictive modelling for healthcare insights
-                  </p>
-                </div>
-
-                <div className="p-6 sm:p-9">
-                  <h3 className="text-2xl font-bold sm:text-3xl">
-                    Breast Cancer Prediction System
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
-                    A machine learning application powered by a
-                    Random Forest classifier that predicts breast
-                    cancer outcomes using five diagnostic
-                    measurements.
-                  </p>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Model Input Features
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {projectFeatures.map((feature) => (
-                        <span
-                          key={feature}
-                          className="rounded-lg border border-gray-700 bg-[#080D18] px-3 py-2 text-xs text-gray-300"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Technologies
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {breastTechnologies.map((technology) => (
-                        <span
-                          key={technology}
-                          className="text-xs font-medium text-blue-400"
-                        >
-                          {technology}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <a
-                      href="https://breast-cancer-prediction-v4pf.onrender.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-500"
-                    >
-                      Live Demo →
-                    </a>
-
-                    <a
-                      href="https://github.com/Vedline2547/Breast-Cancer-Prediction"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
-                    >
-                      GitHub Repository
-                    </a>
-                  </div>
-
-                  <p className="mt-6 text-xs leading-5 text-gray-500">
-                    This project is for educational and predictive
-                    modelling purposes. It is not a substitute for
-                    professional medical diagnosis.
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            {/* Project 02: Elephant Classification */}
-            <article className="mt-8 overflow-hidden rounded-2xl border border-gray-800 bg-[#0D1525] transition duration-300 hover:border-blue-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative flex min-h-[300px] flex-col justify-center overflow-hidden border-b border-gray-800 bg-gradient-to-br from-cyan-950 via-[#101D35] to-[#080D18] p-8 sm:p-10 lg:border-b-0 lg:border-r">
-                  <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full border border-cyan-500/20" />
-                  <div className="absolute -right-5 -top-5 h-36 w-36 rounded-full border border-blue-500/20" />
-
-                  <div className="relative z-10">
+          <div className="space-y-8">
+            {projects.map((project) => (
+              <article
+                key={project.number}
+                className="overflow-hidden rounded-2xl border border-gray-800 bg-[#0D1525] transition duration-300 hover:border-blue-500"
+              >
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div
+                    className={`flex min-h-[280px] flex-col justify-center border-b border-gray-800 bg-gradient-to-br ${project.gradient} p-8 sm:p-10 lg:border-b-0 lg:border-r`}
+                  >
                     <div className="mb-8 flex items-center gap-3">
-                      <span className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-400">
-                        COMPUTER VISION
+                      <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-400">
+                        {project.category}
                       </span>
+
                       <span className="text-xs text-gray-500">
-                        PROJECT 02
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="rounded-xl border border-cyan-500/30 bg-[#080D18]/70 p-4">
-                        <span className="text-3xl">🐘</span>
-                        <p className="mt-3 text-xs font-bold uppercase tracking-wider text-cyan-300">
-                          African
-                        </p>
-                        <p className="mt-1 text-xs text-gray-500">
-                          Elephant
-                        </p>
-                      </div>
-
-                      <div className="rounded-xl border border-blue-500/30 bg-[#080D18]/70 p-4">
-                        <span className="text-3xl">🐘</span>
-                        <p className="mt-3 text-xs font-bold uppercase tracking-wider text-blue-300">
-                          Asian
-                        </p>
-                        <p className="mt-1 text-xs text-gray-500">
-                          Elephant
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="mt-5 flex items-center gap-2 text-xs text-cyan-300">
-                      <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
-                      AI IMAGE CLASSIFICATION
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 sm:p-9">
-                  <h3 className="text-2xl font-bold sm:text-3xl">
-                    Elephant Species Classification
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
-                    A computer vision application that uses deep
-                    learning and transfer learning to classify
-                    elephant images as either African or Asian
-                    elephants.
-                  </p>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Classification Categories
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {["African Elephant", "Asian Elephant"].map((item) => (
-                        <span
-                          key={item}
-                          className="rounded-lg border border-gray-700 bg-[#080D18] px-3 py-2 text-xs text-gray-300"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Technologies
-                    </p>
-
-                    <div className="flex flex-wrap gap-3">
-                      {elephantTechnologies.map((technology) => (
-                        <span
-                          key={technology}
-                          className="text-xs font-medium text-cyan-400"
-                        >
-                          {technology}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <a
-                      href="https://elephant-classification.onrender.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-500"
-                    >
-                      Live Demo →
-                    </a>
-
-                    <a
-                      href="https://github.com/Vedline2547/Elephant-classification"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
-                    >
-                      GitHub Repository
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            {/* Project 03: Solar Panel Defect Classification */}
-            <article className="mt-8 overflow-hidden rounded-2xl border border-gray-800 bg-[#0D1525] transition duration-300 hover:border-blue-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative flex min-h-[300px] flex-col justify-center overflow-hidden border-b border-gray-800 bg-gradient-to-br from-amber-950 via-[#17243A] to-[#080D18] p-8 sm:p-10 lg:border-b-0 lg:border-r">
-                  <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full border border-amber-500/20" />
-                  <div className="absolute -right-5 -top-5 h-36 w-36 rounded-full border border-yellow-500/20" />
-
-                  <div className="relative z-10">
-                    <div className="mb-8 flex items-center gap-3">
-                      <span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400">
-                        COMPUTER VISION
-                      </span>
-                      <span className="text-xs text-gray-500">
-                        PROJECT 03
-                      </span>
-                    </div>
-
-                    <div className="text-6xl">☀️</div>
-
-                    <h3 className="mt-5 text-2xl font-bold text-white">
-                      SOLAR AI
-                    </h3>
-
-                    <p className="mt-2 text-sm text-gray-400">
-                      Intelligent solar panel defect detection
-                    </p>
-
-                    <div className="mt-6 flex items-center gap-2 text-xs text-amber-300">
-                      <span className="h-2 w-2 animate-pulse rounded-full bg-amber-400" />
-                      AI-POWERED IMAGE ANALYSIS
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 sm:p-9">
-                  <h3 className="text-2xl font-bold sm:text-3xl">
-                    Solar Panel Defect Classification
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
-                    A deep learning application that uses an
-                    EfficientNet model with transfer learning to
-                    classify solar panel images into six categories,
-                    helping identify different panel conditions
-                    and defects.
-                  </p>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Classification Categories
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {solarCategories.map((item) => (
-                        <span
-                          key={item}
-                          className="rounded-lg border border-gray-700 bg-[#080D18] px-3 py-2 text-xs text-gray-300"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Technologies
-                    </p>
-
-                    <div className="flex flex-wrap gap-3">
-                      {solarTechnologies.map((technology) => (
-                        <span
-                          key={technology}
-                          className="text-xs font-medium text-amber-400"
-                        >
-                          {technology}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <a
-                      href="https://solar-panel-classifier-yc0d.onrender.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-500"
-                    >
-                      Live Demo →
-                    </a>
-
-                    <a
-                      href="https://github.com/Vedline2547/Solar-panel-defect-classification"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
-                    >
-                      GitHub Repository
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            {/* Project 04: Resume Genie */}
-            <article className="mt-8 overflow-hidden rounded-2xl border border-gray-800 bg-[#0D1525] transition duration-300 hover:border-blue-500">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative flex min-h-[300px] flex-col justify-center overflow-hidden border-b border-gray-800 bg-gradient-to-br from-purple-950 via-[#17203A] to-[#080D18] p-8 sm:p-10 lg:border-b-0 lg:border-r">
-                  <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full border border-purple-500/20" />
-                  <div className="absolute -right-5 -top-5 h-36 w-36 rounded-full border border-blue-500/20" />
-
-                  <div className="relative z-10">
-                    <div className="mb-8 flex items-center gap-3">
-                      <span className="rounded-full border border-purple-500/30 bg-purple-500/10 px-3 py-1 text-xs font-semibold text-purple-400">
-                        AI & LLM SYSTEMS
-                      </span>
-                      <span className="text-xs text-gray-500">
-                        PROJECT 04
+                        PROJECT {project.number}
                       </span>
                     </div>
 
                     <div className="text-5xl font-bold tracking-tight text-white sm:text-6xl">
-                      RESUME<span className="text-purple-500">.</span>
+                      {project.visual}
+                      {project.visual.endsWith(".") && (
+                        <span className="text-blue-500"> </span>
+                      )}
                     </div>
 
-                    <h3 className="mt-4 text-2xl font-bold">
-                      GENIE
+                    <p className="mt-5 text-sm text-gray-400">
+                      {project.visualDescription}
+                    </p>
+                  </div>
+
+                  <div className="p-6 sm:p-9">
+                    <h3 className="text-2xl font-bold sm:text-3xl">
+                      {project.title}
                     </h3>
 
-                    <p className="mt-3 text-sm text-gray-400">
-                      Intelligent AI-powered career assistance
+                    <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
+                      {project.description}
                     </p>
 
-                    <div className="mt-6 flex items-center gap-2 text-xs text-purple-300">
-                      <span className="h-2 w-2 animate-pulse rounded-full bg-purple-400" />
-                      POWERED BY LARGE LANGUAGE MODELS
+                    <div className="mt-7">
+                      <p className="mb-3 text-sm font-semibold text-gray-200">
+                        {project.number === "01"
+                          ? "Model Input Features"
+                          : project.number === "04"
+                            ? "Key Capabilities"
+                            : "Classification Categories"}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2">
+                        {project.features.map((feature) => (
+                          <span
+                            key={feature}
+                            className="rounded-lg border border-gray-700 bg-[#080D18] px-3 py-2 text-xs text-gray-300"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
                     </div>
+
+                    <div className="mt-7">
+                      <p className="mb-3 text-sm font-semibold text-gray-200">
+                        Technologies
+                      </p>
+
+                      <div className="flex flex-wrap gap-3">
+                        {project.technologies.map((technology) => (
+                          <span
+                            key={technology}
+                            className="text-xs font-medium text-blue-400"
+                          >
+                            {technology}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-8 flex flex-wrap gap-3">
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-500"
+                      >
+                        View Project →
+                      </Link>
+
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
+                      >
+                        Live Demo
+                      </a>
+
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
+                      >
+                        GitHub Repository
+                      </a>
+                    </div>
+
+                    {project.disclaimer && (
+                      <p className="mt-6 text-xs leading-5 text-gray-500">
+                        {project.disclaimer}
+                      </p>
+                    )}
                   </div>
                 </div>
-
-                <div className="p-6 sm:p-9">
-                  <h3 className="text-2xl font-bold sm:text-3xl">
-                    Resume Genie – AI Career Assistant
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-gray-400 sm:text-base">
-                    An AI-powered career assistant that leverages
-                    Large Language Models to analyze resumes,
-                    evaluate job compatibility, provide personalized
-                    career guidance, and generate tailored
-                    professional cover letters.
-                  </p>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Key Capabilities
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {[
-                        "AI Resume Analysis",
-                        "ATS Job Matching",
-                        "Career Coaching",
-                        "Cover Letter Generation",
-                        "Skills Gap Analysis",
-                      ].map((item) => (
-                        <span
-                          key={item}
-                          className="rounded-lg border border-gray-700 bg-[#080D18] px-3 py-2 text-xs text-gray-300"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-7">
-                    <p className="mb-3 text-sm font-semibold text-gray-200">
-                      Technologies
-                    </p>
-
-                    <div className="flex flex-wrap gap-3">
-                      {resumeGenieTechnologies.map((technology) => (
-                        <span
-                          key={technology}
-                          className="text-xs font-medium text-purple-400"
-                        >
-                          {technology}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <a
-                      href="http://15.188.26.4:8501/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-500"
-                    >
-                      Live Demo →
-                    </a>
-
-                    <a
-                      href="https://github.com/Vedline2547/Resume-genie"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition hover:border-blue-500 hover:text-white"
-                    >
-                      GitHub Repository
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
-
-          {/* Contact CTA */}
-          <div className="mt-14 rounded-2xl border border-blue-900 bg-[#0D1525] px-6 py-10 text-center sm:mt-20 sm:px-10 sm:py-14">
-            <h2 className="text-2xl font-bold sm:text-3xl">
-              Have a problem we can solve?
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-gray-400 sm:text-base">
-              Let's explore how artificial intelligence
-              and machine learning can support your project.
-            </p>
-
-            <Link
-              href="/contact"
-              className="mt-7 inline-block rounded-lg bg-blue-600 px-7 py-3.5 text-sm font-medium transition hover:bg-blue-500 sm:mt-8 sm:py-4 sm:text-base"
-            >
-              Contact HEISVED
-            </Link>
+              </article>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="border-t border-gray-800/70 bg-[#0A1120] px-5 py-20 text-center sm:px-8 sm:py-24 lg:px-20">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400">
+            Work With HEISVED
+          </p>
+
+          <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
+            Have a Challenge We Can Help Solve?
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-xl leading-8 text-gray-400">
+            Whether you need a machine learning solution,
+            an AI-powered application or custom software,
+            let's discuss how we can bring your idea to life.
+          </p>
+
+          <Link
+            href="/contact"
+            className="mt-9 inline-block rounded-lg bg-blue-600 px-8 py-4 text-sm font-semibold transition hover:bg-blue-500"
+          >
+            Start a Conversation
+          </Link>
         </div>
       </section>
     </main>

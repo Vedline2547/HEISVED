@@ -16,7 +16,7 @@ const services = [
     number: "02",
     title: "AI Development",
     description:
-      "Building intelligent applications and practical AI-powered solutions for real-world challenges.",
+      "Intelligent applications, AI-powered solutions, and automation systems designed to address practical challenges.",
     tag: "INTELLIGENT SYSTEMS",
   },
   {
@@ -33,13 +33,31 @@ const services = [
       "Visual intelligence solutions for image classification, object detection, and automated inspection.",
     tag: "VISION AI",
   },
+  {
+    number: "05",
+    title: "Custom Software",
+    description:
+      "Purpose-built software applications and digital platforms tailored to business and operational needs.",
+    tag: "SOFTWARE DEVELOPMENT",
+  },
 ];
 
 const engineeringAreas = [
-  ["01", "Structural Design", "Engineering analysis and design."],
-  ["02", "Civil Engineering", "Practical engineering applications."],
-  ["03", "Digital Construction", "BIM and digital workflows."],
-  ["04", "Innovation", "Technology-driven engineering."],
+  [
+    "01",
+    "Structural Engineering",
+    "Structural analysis, design, and engineering solutions.",
+  ],
+  [
+    "02",
+    "BIM & Digital Construction",
+    "Building Information Modelling and digital project workflows.",
+  ],
+  [
+    "03",
+    "BIM + AI Innovation",
+    "Exploring intelligent automation and AI-powered BIM workflows.",
+  ],
 ];
 
 export default function Home() {
@@ -73,7 +91,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#080D18] text-white">
-
       {/* HERO */}
       <section className="tech-glow relative flex min-h-[650px] items-center px-5 py-20 sm:px-8 md:min-h-[700px] md:px-12 md:py-28 lg:px-20">
         <div className="tech-grid absolute inset-0 opacity-70" />
@@ -83,7 +100,6 @@ export default function Home() {
         <div className="pointer-events-none absolute bottom-0 left-[-100px] h-[250px] w-[250px] rounded-full bg-cyan-500/10 blur-[100px] md:h-[300px] md:w-[300px]" />
 
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-16">
-
           {/* Hero text */}
           <div data-reveal className="min-w-0">
             <div className="fade-up inline-flex max-w-full items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-2 sm:gap-3 sm:px-4">
@@ -105,8 +121,9 @@ export default function Home() {
 
             <p className="fade-up-late mt-6 max-w-xl text-base leading-7 text-slate-400 sm:mt-8 sm:text-lg sm:leading-8">
               We develop intelligent technology solutions through
-              artificial intelligence, machine learning, and engineering
-              innovation — creating possibilities for Africa and beyond.
+              artificial intelligence, machine learning, software
+              development, and engineering innovation — creating
+              possibilities for Africa and beyond.
             </p>
 
             <div className="fade-up-late mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
@@ -121,7 +138,7 @@ export default function Home() {
                 href="/engineering"
                 className="rounded-lg border border-slate-700 px-6 py-4 text-center text-sm font-semibold transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-400 sm:px-7 sm:text-base"
               >
-                Explore Projects
+                Explore Engineering
               </Link>
             </div>
 
@@ -207,12 +224,16 @@ export default function Home() {
             </Link>
           </div>
 
-          <p data-reveal className="mt-6 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-            We combine intelligent technologies and technical expertise
-            to develop solutions that address practical challenges.
+          <p
+            data-reveal
+            className="mt-6 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8"
+          >
+            We combine intelligent technologies, software development,
+            and technical expertise to develop solutions that address
+            practical challenges.
           </p>
 
-          <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
                 key={service.number}
@@ -251,7 +272,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div data-reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400 sm:text-sm">
-              Engineering Solutions
+              Engineering Services
             </p>
 
             <h2 className="mt-5 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
@@ -259,9 +280,11 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-              We explore civil engineering, structural analysis, design,
-              and digital construction technologies. Our work brings
-              technical engineering principles into practical applications.
+              We provide engineering-focused services in structural
+              engineering and Building Information Modelling, while
+              exploring how artificial intelligence can enhance
+              engineering design, analysis, and digital construction
+              workflows.
             </p>
 
             <Link
@@ -283,7 +306,9 @@ export default function Home() {
                   data-reveal
                   className="glow-border rounded-xl border border-slate-800 bg-[#080D18] p-5 sm:p-6"
                 >
-                  <p className="text-3xl font-bold text-blue-400">{number}</p>
+                  <p className="text-3xl font-bold text-blue-400">
+                    {number}
+                  </p>
 
                   <h3 className="mt-4 font-semibold">{title}</h3>
 
@@ -314,18 +339,15 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
-            We are exploring AI-powered Building Information Modelling,
-            intelligent engineering assistants, and smarter digital
-            construction workflows.
+            We explore AI-powered Building Information Modelling,
+            intelligent engineering assistants, intelligent automation,
+            and applied AI research to investigate new ways of solving
+            practical challenges.
           </p>
 
           <div className="mt-8 flex flex-col items-start gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
             <span className="rounded-full border border-blue-500/40 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-400">
               Research & Development
-            </span>
-
-            <span className="rounded-full border border-slate-700 px-5 py-2 text-sm text-slate-300">
-              Coming Soon
             </span>
           </div>
 
@@ -353,7 +375,7 @@ export default function Home() {
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-400 sm:mt-7 sm:text-lg sm:leading-8">
             A Kenyan-founded technology company focused on artificial
-            intelligence, machine learning, and engineering innovation.
+            intelligence, software development, and engineering innovation.
             We are building intelligent solutions with the ambition to
             contribute to Africa&apos;s technological advancement and beyond.
           </p>
@@ -370,7 +392,6 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-slate-800 bg-[#060B14] px-5 py-12 sm:px-8 md:px-12 lg:px-20">
         <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
-
           {/* Company */}
           <div>
             <Link href="/" className="text-2xl font-bold tracking-wider">
@@ -394,14 +415,20 @@ export default function Home() {
               </Link>
 
               <Link href="/services" className="transition hover:text-blue-400">
-                AI Services
+                Services
               </Link>
 
-              <Link href="/engineering" className="transition hover:text-blue-400">
+              <Link
+                href="/engineering"
+                className="transition hover:text-blue-400"
+              >
                 Engineering
               </Link>
 
-              <Link href="/innovation" className="transition hover:text-blue-400">
+              <Link
+                href="/innovation"
+                className="transition hover:text-blue-400"
+              >
                 Innovation Lab
               </Link>
 
