@@ -2,7 +2,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://heisved.com";
+  const baseUrl = "https://heisved.onrender.com";
 
   const pages = [
     "",
@@ -23,6 +23,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: page === "" ? 1 : page.startsWith("/projects/") ? 0.7 : 0.8,
+    priority:
+      page === ""
+        ? 1
+        : page.startsWith("/projects/")
+          ? 0.7
+          : 0.8,
   }));
 }

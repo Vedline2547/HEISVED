@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://heisved.com"),
+  metadataBase: new URL("https://heisved.onrender.com"),
 
   title: {
     default: "HEISVED | Engineering Intelligence. Building Tomorrow.",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "HEISVED | Engineering Intelligence. Building Tomorrow.",
     description:
       "A Kenyan-founded technology company delivering AI, software development, and engineering solutions. Founded in Kenya. Building for Africa and the world.",
-    url: "https://heisved.com",
+    url: "https://heisved.onrender.com",
     siteName: "HEISVED",
     locale: "en_KE",
     type: "website",
@@ -92,3 +92,4 @@ export default function RootLayout({
     </html>
   );
 }
+
