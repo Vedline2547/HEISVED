@@ -17,9 +17,7 @@ export default function ContactPage() {
 
         <h1 className="mt-5 max-w-4xl text-3xl font-bold leading-tight sm:text-4xl md:text-6xl">
           Let's Build Something
-          <span className="block text-blue-500">
-            Intelligent.
-          </span>
+          <span className="block text-blue-500">Intelligent.</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-relaxed">
@@ -52,10 +50,7 @@ export default function ContactPage() {
             />
 
             <div>
-              <label
-                htmlFor="name"
-                className="mb-2 block text-sm font-medium text-slate-300"
-              >
+              <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-300">
                 Full Name
               </label>
               <input
@@ -70,10 +65,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm font-medium text-slate-300"
-              >
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-300">
                 Email Address
               </label>
               <input
@@ -88,10 +80,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label
-                htmlFor="service"
-                className="mb-2 block text-sm font-medium text-slate-300"
-              >
+              <label htmlFor="service" className="mb-2 block text-sm font-medium text-slate-300">
                 Service Required
               </label>
               <select
@@ -101,47 +90,22 @@ export default function ContactPage() {
                 defaultValue=""
                 className="w-full rounded-lg border border-slate-700 bg-[#080D18] px-4 py-3 text-white outline-none transition focus:border-blue-500"
               >
-                <option value="" disabled>
-                  Select a service
-                </option>
-                <option value="Machine Learning and AI">
-                  Machine Learning & AI
-                </option>
-                <option value="AI Application Development">
-                  AI Application Development
-                </option>
-                <option value="LLMs and RAG Systems">
-                  LLMs & RAG Systems
-                </option>
-                <option value="Computer Vision">
-                  Computer Vision
-                </option>
-                <option value="Custom Software Development">
-                  Custom Software Development
-                </option>
-                <option value="Structural Engineering">
-                  Structural Engineering
-                </option>
-                <option value="BIM and Digital Construction">
-                  BIM & Digital Construction
-                </option>
-                <option value="BIM and AI Innovation">
-                  BIM + AI Innovation
-                </option>
-                <option value="Partnership">
-                  Partnership
-                </option>
-                <option value="Other">
-                  Other
-                </option>
+                <option value="" disabled>Select a service</option>
+                <option value="Machine Learning and AI">Machine Learning & AI</option>
+                <option value="AI Application Development">AI Application Development</option>
+                <option value="LLMs and RAG Systems">LLMs & RAG Systems</option>
+                <option value="Computer Vision">Computer Vision</option>
+                <option value="Custom Software Development">Custom Software Development</option>
+                <option value="Structural Engineering">Structural Engineering</option>
+                <option value="BIM and Digital Construction">BIM & Digital Construction</option>
+                <option value="BIM and AI Innovation">BIM + AI Innovation</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="mb-2 block text-sm font-medium text-slate-300"
-              >
+              <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-300">
                 Project Description
               </label>
               <textarea
@@ -222,6 +186,69 @@ export default function ContactPage() {
           </div>
         </div>
 
+        {/* Personal Social Profiles */}
+        <div className="mt-10 rounded-xl border border-slate-800 bg-slate-900/40 p-6 sm:p-8">
+          <h2 className="text-xl font-semibold">
+            Connect With Me
+          </h2>
+
+          <p className="mt-3 text-sm leading-7 text-slate-400 sm:text-base">
+            Follow my work, explore my projects, and connect with
+            me professionally.
+          </p>
+
+          <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <a
+              href="https://www.linkedin.com/in/vedline-ochieng-025146290/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect with Vedline on LinkedIn"
+              className="flex items-center gap-4 rounded-lg border border-slate-700 bg-[#080D18] p-4 transition hover:border-blue-500 hover:bg-blue-500/10"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-600 text-xl font-bold">
+                in
+              </span>
+              <span>
+                <span className="block font-semibold">LinkedIn</span>
+                <span className="text-sm text-slate-400">Professional profile</span>
+              </span>
+            </a>
+
+            <a
+              href="https://x.com/heisved1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Vedline on X"
+              className="flex items-center gap-4 rounded-lg border border-slate-700 bg-[#080D18] p-4 transition hover:border-slate-400 hover:bg-slate-800"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-slate-800 text-xl font-bold">
+                𝕏
+              </span>
+              <span>
+                <span className="block font-semibold">X (Twitter)</span>
+                <span className="text-sm text-slate-400">Updates and insights</span>
+              </span>
+            </a>
+
+            <a
+              href="https://github.com/Vedline2547"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Explore Vedline's GitHub projects"
+              className="flex items-center gap-4 rounded-lg border border-slate-700 bg-[#080D18] p-4 transition hover:border-slate-400 hover:bg-slate-800"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-slate-800 text-xl font-bold">
+                GH
+              </span>
+              <span>
+                <span className="block font-semibold">GitHub</span>
+                <span className="text-sm text-slate-400">Explore my projects</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        {/* Footer */}
         <div className="mt-14 border-t border-slate-800 pt-8 sm:mt-16">
           <p className="text-xs leading-6 text-slate-500 sm:text-sm">
             HEISVED — Engineering Intelligence. Building Tomorrow.
